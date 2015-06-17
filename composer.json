@@ -1,5 +1,5 @@
 {
-    "name": "driehle/bks-application",
+    "name": "driehle/zf2-doctrine-skeleton",
     "description": "Skeleton Application for ZF2 with Doctrine ORM",
     "license": "BSD-3-Clause",
     "require": {
