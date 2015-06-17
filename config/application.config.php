@@ -5,14 +5,20 @@
  * @see http://framework.zend.com/manual/current/en/tutorials/config.advanced.html#environment-specific-system-configuration
  * @see http://framework.zend.com/manual/current/en/tutorials/config.advanced.html#environment-specific-application-configuration
  */
+
+// This should be an array of module namespaces used in the application.
+$modules = array(
+    'DoctrineModule',
+    'DoctrineORMModule',
+    'Application',
+);
+// ZendDeveloperTools are only enabled on local development server
+if (php_sapi_name() == 'cli-server') {
+    $modules[] = 'ZendDeveloperTools';
+}
+
 return array(
-    // This should be an array of module namespaces used in the application.
-    'modules' => array(
-        'DoctrineModule',
-        'DoctrineORMModule',
-        'Application',
-        //'ZendDeveloperTools',
-    ),
+    'modules' => $modules,
 
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => array(
