@@ -11,6 +11,7 @@ $modules = array(
     'DoctrineModule',
     'DoctrineORMModule',
     'Application',
+    'TwbBundle'
 );
 // ZendDeveloperTools are only enabled on local development server
 if (php_sapi_name() == 'cli-server') {
