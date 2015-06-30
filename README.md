@@ -1,4 +1,4 @@
-ZendSkeletonApplication
+ZF2 Doctrine Skeleton
 =======================
 
 Introduction
