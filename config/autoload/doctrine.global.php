@@ -1,14 +1,17 @@
 <?php
+
 return array(
+    'service_manager' => array(
+            'invokables' => array(
+                'Doctrine\ORM\Mapping\UnderscoreNamingStrategy' => 'Doctrine\ORM\Mapping\UnderscoreNamingStrategy',
+            ),
+        ),
     'doctrine' => array(
-        'connection' => array(
-            // default connection name
+        'configuration' => array(
             'orm_default' => array(
-                'driverClass' => 'Doctrine\DBAL\Driver\PDOSqlite\Driver',
-                'params' => array(
-                    'path'     => 'data/database.sqlite',
-                )
-            )
-        )
+                'naming_strategy' => 'Doctrine\ORM\Mapping\UnderscoreNamingStrategy'
+            ),
+        ),
     ),
 );
+

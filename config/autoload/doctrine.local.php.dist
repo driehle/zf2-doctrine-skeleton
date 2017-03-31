@@ -1,0 +1,30 @@
+<?php
+// COPY THIS FILE TO doctrine.local.php
+// AND MAKE CHANGES TO CONNECT TO YOUR PREFERRED DATABASE
+return array(
+    'doctrine' => array(
+        'connection' => array(
+            // BEGIN EXAMPLE CONFIGURATION SQLITE
+            'orm_default' => array(
+                'driverClass' => 'Doctrine\DBAL\Driver\PDOSqlite\Driver',
+                'params' => array(
+                    'path'     => 'data/database.sqlite',
+                )
+            )
+            // END EXAMPLE CONFIGURATION SQLITE
+            // BEGIN EXAMPLE CONFIGURATION MYSQL
+            'orm_default' => array(
+                'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
+                'params' => array(
+                    'host'     => 'localhost',
+                    'port'     => '3306',
+                    'user'     => 'username',
+                    'password' => 'password',
+                    'dbname'   => 'database',
+                    'charset'  => 'UTF8',
+                )
+            )
+            // END EXAMPLE CONFIGURATION MYSQL
+        )
+    ),
+);
