@@ -9,10 +9,11 @@ return array(
                 'driverClass' => 'Doctrine\DBAL\Driver\PDOSqlite\Driver',
                 'params' => array(
                     'path'     => 'data/database.sqlite',
-                )
-            )
+                ),
+            ),
             // END EXAMPLE CONFIGURATION SQLITE
             // BEGIN EXAMPLE CONFIGURATION MYSQL
+            /*
             'orm_default' => array(
                 'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
                 'params' => array(
@@ -22,8 +23,9 @@ return array(
                     'password' => 'password',
                     'dbname'   => 'database',
                     'charset'  => 'UTF8',
-                )
-            )
+                ),
+            ),
+            */
             // END EXAMPLE CONFIGURATION MYSQL
         )
     ),

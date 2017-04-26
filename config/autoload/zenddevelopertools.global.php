@@ -61,7 +61,9 @@ return array(
              * Example: 'collectors' => array('db' => null)
              * Expects: array
              */
-            'collectors' => array()
+            'collectors' => array(
+                'db' => null,
+            ),
         ),
         'events' => array(
             /**
@@ -147,7 +149,10 @@ return array(
              * ),
              * Expects: array
              */
-            'entries' => array()
+            'entries' => array(
+                'config' => false,
+                'db' => false,
+            ),
         )
     )
 );

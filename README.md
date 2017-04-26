@@ -5,19 +5,20 @@ Introduction
 ------------
 This is a simple, skeleton application using the ZF2 MVC layer and module
 systems. This application is meant to be used as a starting place for those
-looking to get their feet wet with ZF2. Doctrine ORM has been added with a
-SQLite database configured, ready to start right away.
+looking to get their feet wet with ZF2. The Doctrine ORM Module has been added 
+and can easily be configured to use a SQLite database. Your project is set up 
+in just a few minutes!
 
-Installation using Composer
----------------------------
+Installation 
+------------
+
+### Installation using Composer
 
 The easiest way to create a new ZF2 project is to use [Composer](https://getcomposer.org/). If you don't have it already installed, then please install as per the [documentation](https://getcomposer.org/doc/00-intro.md).
-
 
 Create your new ZF2 project:
 
     composer create-project -n -sdev driehle/zf2-doctrine-skeleton path/to/install
-
 
 
 ### Installation using a tarball with a local Composer
@@ -36,6 +37,15 @@ If you don't have composer installed globally then another way to create a new Z
         php composer.phar install
 
 If you don't have access to curl, then install Composer into your project as per the [documentation](https://getcomposer.org/doc/00-intro.md).
+
+
+Configuration
+-------------
+
+Before you start, you need to tell Doctrine which database to use. You can simply do so by
+copying the file `config/autoload/doctrine.local.php.dist` to `config/autoload/doctrine.local.php`.
+Open that file, you will see sample configurations for both MySQL and SQLite. Simply enable 
+one of them by commenting out the other one and you're ready to start.
 
 Web server setup
 ----------------
